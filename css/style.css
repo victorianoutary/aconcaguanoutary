@@ -83,11 +83,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 390px;
   }
 
   .main {
     background-image: url(../images/montanasmart.png);
-    height: 110%;
+    height: 110vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -167,7 +168,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 60px;
   }
 
   .enlaces a {
@@ -201,6 +201,7 @@ body {
     background-color: #f92a82;
     padding-top: 5%;
     padding-bottom: 15%;
+    margin-top: 500px;
   }
   .footer__enlaces a {
     color: #fff;
@@ -440,7 +441,7 @@ body {
   header {
     grid-area: encabezado;
     background-color: #000;
-    padding: 15px 30px;
+    padding: 15px 20px 10px 5px;
   }
   .header__titulo {
     color: white;
@@ -568,7 +569,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 40px;
-    margin-bottom: -120px;
+    margin-bottom: -245px;
   }
 
   .enlaces a {
@@ -598,6 +599,7 @@ body {
     background-color: #f92a82;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-top: 130px;
   }
   .footer__enlaces a {
     color: #fff;
@@ -617,196 +619,6 @@ body {
     transform: scale(1.1);
   }
 }
-/***********************************************OTRAS PAGINAS*****************************************************/
-/*SECCION NOSOTROS*/
-/************************************Smartphone**************************************************/
-@media (max-width: 480px) {
-  #nosotros {
-    display: grid;
-    grid-template-areas: 
-         /*1 columna 3 filas*/
-      "encabezado" /*fila1*/
-      "nosotros" /*fila2*/
-      "volver" /*fila3*/
-      "pie" /*fila4*/;
-    grid-template-rows: 20% auto 10% 20%;
-    grid-template-columns: auto;
-  }
-
-  .nosotros__caja {
-    background-color: #000;
-    background-size: cover;
-    padding: 0px 20px 0px 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .nosotros__titulo {
-    background-color: #000;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-family: "Roboto", sans-serif;
-    padding-left: 50px;
-  }
-  .nosotros__texto {
-    color: #fff;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 12px;
-    font-family: "Roboto", sans-serif;
-    padding-left: 30px;
-    padding-right: 10px;
-  }
-  .nosotros__texto:hover {
-    color: #31f420;
-  }
-  .nosotros__imagen {
-    width: 300px;
-    height: 150px;
-    border-radius: 20px;
-  }
-  .volver {
-    grid-area: volver;
-  }
-  /*Volver al menu ppal SMART*/
-
-  .menuprincipal {
-    background-color: #000;
-  }
-  .menuprincipal__texto {
-    color: #fff;
-    font-weight: 100;
-    font-size: 10px;
-    font-style: normal;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-  }
-
-  .menuprincipal__logo {
-    width: 20px;
-    height: 10px;
-    margin-top: 15px;
-    margin-left: 20px;
-  }
-  /*Fin volver menu ppal SMART*/
-}
-
-/************************Tablet********************************/
-@media (min-width: 481px) and (max-width: 1023px) {
-  #nosotros {
-    display: grid;
-    grid-template-areas: 
-         /*1 columna 3 filas*/
-      "encabezado" /*fila1*/
-      "nosotros" /*fila2*/
-      "volver" /*fila3*/
-      "pie" /*fila4*/;
-    grid-template-rows: 20% auto 20%;
-    grid-template-columns: auto;
-  }
-
-  .nosotros__caja {
-    background-color: #000;
-    background-size: cover;
-    padding: 0px 20px 0px 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .nosotros__titulo {
-    background-color: #000;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    font-style: normal;
-    font-family: "Roboto", sans-serif;
-    padding-top: 40px;
-    padding-left: 70px;
-  }
-  .nosotros__texto {
-    color: #fff;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .nosotros__texto:hover {
-    color: #31f420;
-  }
-  .nosotros__imagen {
-    width: 400px;
-    height: 250px;
-    border-radius: 20px;
-  }
-  #volver {
-    grid-area: volver;
-  }
-}
-/***************************Desktop****************************/
-@media (min-width: 1024px) {
-  #nosotros {
-    display: grid;
-    grid-template-areas: 
-         /*1 columna 3 filas*/
-      "encabezado" /*fila1*/
-      "nosotros" /*fila2*/
-      "volver" /*fila3*/
-      "pie" /*fila4*/;
-    grid-template-rows: 25% 70% 17% 8%;
-    grid-template-columns: auto;
-  }
-
-  .nosotros__caja {
-    background-color: #000;
-    background-size: cover;
-    padding: 0px 20px 0px 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .nosotros__titulo {
-    background-color: #000;
-    color: #fff;
-    font-size: 26px;
-    font-weight: 500;
-    font-style: normal;
-    font-family: "Roboto", sans-serif;
-    padding-top: 40px;
-    padding-left: 70px;
-  }
-  .nosotros__texto {
-    color: #fff;
-    -webkit-text-stroke-color: #31f420;
-    -webkit-text-stroke-width: 0.2px;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .nosotros__texto:hover {
-    color: #31f420;
-  }
-
-  .nosotros__imagen {
-    width: 600px;
-    height: 320px;
-    border-radius: 20px;
-  }
-  #volver {
-    grid-area: volver;
-  }
-}
-
-/*FIN NOSOTROS*/
 
 /*MENU PRINCIPAL*/
 
@@ -830,697 +642,82 @@ body {
 }
 /*FIN MENU PRINCIPAL*/
 
-/*CLIENTES*/
-/**************************************Smartphone*****************************************************/
-@media (max-width: 480px) {
-  #clientes {
-    grid-template-areas: 
-        /*1columna 9filas*/
-      "encabezado"
-      "titulo"
-      "subtitulo"
-      "imagenes"
-      "texto"
-      "volver"
-      "pie";
-    grid-template-columns: auto;
-    grid-template-rows: 20% 15% 20% 60% 15% 10% 20%;
-  }
+/*Volver al menu ppal SMART*/
 
-  .clientes__titulo {
-    grid-area: titulo;
-    color: #fff;
-    background-color: #000;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-  }
-  .clientes__texto {
-    grid-area: subtitulo;
-    color: #fff;
-    background-color: #000;
-    -webkit-text-stroke-color: #31f420;
-    -webkit-text-stroke-width: 0.2px;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 50px;
-  }
-  .clientes__texto:hover {
-    color: #31f420;
-  }
-  .clientes__img {
-    border-radius: 30px;
-    width: 150px;
-    height: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .clientes__enlace {
-    text-decoration: none;
-    list-style: none;
-    color: #fff;
-    background-color: #000;
-  }
-  .clientes {
-    background-color: #000;
-  }
-  .volver {
-    grid-area: volver;
-  }
-  /*Volver al menu ppal SMART*/
-
-  .menuprincipal {
-    background-color: #000;
-  }
-  .menuprincipal__texto {
-    color: #fff;
-    font-weight: 100;
-    font-size: 10px;
-    font-style: normal;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-  }
-
-  .menuprincipal__logo {
-    width: 20px;
-    height: 10px;
-    margin-top: 15px;
-    margin-left: 20px;
-  }
-  /*Fin volver menu ppal SMART*/
-}
-
-/****************************************Tablet*********************************************/
-@media (min-width: 481px) and (max-width: 1023px) {
-  #clientes {
-    grid-template-areas: 
-        /*1columna 9filas*/
-      "encabezado"
-      "titulo"
-      "subtitulo"
-      "imagenes"
-      "texto"
-      "volver"
-      "pie";
-    grid-template-columns: auto;
-    grid-template-rows: 20% 15% 20% 60% 15% 10% 20%;
-  }
-
-  .clientes__titulo {
-    grid-area: titulo;
-    color: #fff;
-    background-color: #000;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-  }
-  .clientes__texto {
-    grid-area: subtitulo;
-    color: #fff;
-    background-color: #000;
-    -webkit-text-stroke-color: #31f420;
-    -webkit-text-stroke-width: 0.2px;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 50px;
-  }
-  .clientes__texto:hover {
-    color: #31f420;
-  }
-  .clientes__img {
-    border-radius: 30px;
-    width: 150px;
-    height: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .clientes__enlace {
-    text-decoration: none;
-    list-style: none;
-    color: #fff;
-    background-color: #000;
-  }
-  .clientes {
-    background-color: #000;
-  }
-  .volver {
-    grid-area: volver;
-  }
-  /*Volver al menu ppal TABLET*/
-
-  .menuprincipal {
-    background-color: #000;
-  }
-  .menuprincipal__texto {
-    color: #fff;
-    font-weight: 100;
-    font-size: 12px;
-    font-style: normal;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-  }
-
-  .menuprincipal__logo {
-    width: 30px;
-    height: 20px;
-    margin-top: 15px;
-    margin-left: 20px;
-  }
-  /*Fin volver menu ppal TABLET*/
-}
-/**********************************************Desktop************************************************************/
-@media (min-width: 1024px) {
-  #clientes {
-    grid-template-areas: 
-        /*1columna 9filas*/
-      "encabezado"
-      "titulo"
-      "subtitulo"
-      "imagenes"
-      "texto"
-      "volver"
-      "pie";
-    grid-template-columns: auto;
-    grid-template-rows: 20% 15% 20% 60% 15% 10% 20%;
-  }
-
-  .clientes__titulo {
-    grid-area: titulo;
-    color: #fff;
-    background-color: #000;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-  }
-  .clientes__texto {
-    grid-area: subtitulo;
-    color: #fff;
-    background-color: #000;
-    -webkit-text-stroke-color: #31f420;
-    -webkit-text-stroke-width: 0.2px;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 50px;
-  }
-  .clientes__texto:hover {
-    color: #31f420;
-  }
-  .clientes__img {
-    border-radius: 30px;
-    width: 150px;
-    height: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .clientes__enlace {
-    text-decoration: none;
-    list-style: none;
-    color: #fff;
-    background-color: #000;
-  }
-  .clientes {
-    background-color: #000;
-  }
-  .volver {
-    grid-area: volver;
-  }
-}
-/*FIN CLIENTES*/
-
-/*CONTACTANOS*/
-
-.contactanos {
+.menuprincipal {
   background-color: #000;
 }
-.contactanos__titulo {
+.menuprincipal__texto {
   color: #fff;
-  background-color: #000;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  padding-top: 20px;
-  padding-left: 40px;
-}
-.contactanos__texto {
-  color: #fff;
-  background-color: #000;
-  -webkit-text-stroke-color: #31f420;
-  -webkit-text-stroke-width: 0.2px;
-  font-style: normal;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 10px;
+  font-style: normal;
   font-family: "Roboto", sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
+  text-decoration: none;
 }
-.contactanos__texto:hover {
+
+.menuprincipal__logo {
+  width: 20px;
+  height: 10px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+/*Fin volver menu ppal SMART*/
+
+.menuprincipal {
+  background-color: #000;
+}
+.menuprincipal__texto {
+  color: #fff;
+  font-weight: 100;
+  font-size: 12px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.menuprincipal__logo {
+  width: 30px;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+/********************Volver al menu principal********************/
+
+.volver {
+  background-color: #000;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+.volver__logo {
+  width: 50px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.volver__texto {
+  color: #fff;
+  font-weight: 100;
+  font-size: 15px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding-left: 10px;
+}
+/************************************************ANIMACIONES HOVER***********************************/
+.texto-hover:hover {
   color: #31f420;
 }
-.contactanos__clientes {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 100;
-  font-family: "Roboto", sans-serif;
+.header__link:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
-.contactanos__subtitulo {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 100;
-  font-family: "Roboto", sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 50px;
+.list-inline-item:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
-.contactanos__form {
-  padding-bottom: 50px;
-}
-
-/*FIN CONTACTANOS*/
-/***********************************************************************************************************/
-
-/*MARKETING DIGITAL*/
-/************************************Smartphone*******************************************************/
-@media (max-width: 480px) {
-  #mktdigital {
-    grid-template-areas: /*7 filas 1 col*/
-      "encabezado"
-      "titulo"
-      "google"
-      "seo"
-      "smedia"
-      "volver"
-      "pie";
-  }
-  .mktdigital {
-    background-color: #000;
-  }
-  .google {
-    grid-area: google;
-  }
-  .seo {
-    grid-area: seo;
-  }
-  .smedia {
-    grid-area: smedia;
-  }
-  .mktdigital__titulo {
-    grid-area: titulo;
-    color: #fff;
-    background-color: #000;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-top: 20px;
-    padding-left: 50px;
-  }
-  .mktdigital__subtitulo {
-    color: #fff;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 50px;
-  }
-  .mktdigital__texto {
-    color: #fff;
-    -webkit-text-stroke-color: #31f420;
-    -webkit-text-stroke-width: 0.2px;
-    font-size: 12px;
-    font-weight: 100;
-    font-family: "Roboto", sans-serif;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    padding-left: 50px;
-  }
-  .mktdigital__texto:hover {
-    color: #31f420;
-  }
-  .mktdigital__img {
-    border-radius: 20px;
-    width: 50%;
-  }
-}
-/**********************************************Tablet*************************************************/
-.mktdigital {
-  background-color: #000;
-}
-.mktdigital__titulo {
-  color: #fff;
-  background-color: #000;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  padding-top: 20px;
-  padding-left: 50px;
-}
-.mktdigital__subtitulo {
-  color: #fff;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-left: 50px;
-}
-.mktdigital__texto {
-  color: #fff;
-  -webkit-text-stroke-color: #31f420;
-  -webkit-text-stroke-width: 0.2px;
-  font-size: 20px;
-  font-weight: 100;
-  font-family: "Roboto", sans-serif;
-  padding-bottom: 30px;
-  padding-top: 20px;
-  padding-left: 50px;
-}
-.mktdigital__texto:hover {
-  color: #31f420;
-}
-.mktdigital__img {
-  border-radius: 20px;
-}
-/**********************************************Desktop******************************************************/
-.mktdigital {
-  background-color: #000;
-}
-.mktdigital__titulo {
-  color: #fff;
-  background-color: #000;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  padding-top: 20px;
-  padding-left: 50px;
-}
-.mktdigital__subtitulo {
-  color: #fff;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-left: 50px;
-}
-.mktdigital__texto {
-  color: #fff;
-  -webkit-text-stroke-color: #31f420;
-  -webkit-text-stroke-width: 0.2px;
-  font-size: 20px;
-  font-weight: 100;
-  font-family: "Roboto", sans-serif;
-  padding-bottom: 30px;
-  padding-top: 20px;
-  padding-left: 50px;
-}
-.mktdigital__texto:hover {
-  color: #31f420;
-}
-.mktdigital__img {
-  border-radius: 20px;
-}
-/*FIN MARKETING DIGITAL*/
-
-/*REDES*/
-/**********************************************Smartphone********************************************************/
-@media (max-width: 480px) {
-  #redes {
-    display: grid;
-    grid-template-areas: 
-        /*2columna 7 filas*/
-      "encabezado"
-      "manejo"
-      "facebook"
-      "twitter"
-      "instagram"
-      "principal"
-      "pie";
-    grid-template-rows: 20% 10% 45% 45% 45% 10% 15%;
-    grid-template-columns: auto;
-  }
-
-  .redes {
-    background-color: #000;
-  }
-  .redes__titulo {
-    color: #fff;
-    background-color: #000;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-left: 40px;
-  }
-  .redes__subtitulo {
-    color: #fff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-left: 40px;
-    margin-bottom: 10px;
-  }
-  .redes__texto {
-    color: #fff;
-    -webkit-text-stroke-color: #31f420;
-    -webkit-text-stroke-width: 0.2px;
-    font-size: 10px;
-    font-weight: 100;
-    font-family: "Roboto", sans-serif;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .redes__texto:hover {
-    color: #31f420;
-  }
-  .redes__enlace {
-    text-decoration: none;
-    list-style: none;
-    color: #fff;
-    background-color: #000;
-    font-family: "Roboto", sans-serif;
-    font-size: 10px;
-    font-weight: 100;
-  }
-  .redes__imagenes {
-    border-radius: 20px;
-    width: 50%;
-    height: 30%;
-    margin-left: 90px;
-    padding-top: 5px;
-  }
-
-  /*Volver al menu ppal SMART*/
-
-  .menuprincipal {
-    background-color: #000;
-    padding-top: 5px;
-    padding-left: 30px;
-  }
-  .menuprincipal__texto {
-    color: #fff;
-    font-weight: 100;
-    font-size: 10px;
-    font-style: normal;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-  }
-
-  .menuprincipal__logo {
-    width: 30px;
-    height: 20px;
-  }
-  /*Fin volver menu ppal SMART*/
-}
-/***************************************************Tablet********************************************************/
-@media (min-width: 481px) and (max-width: 1023px) {
-  #redes {
-    display: grid;
-    grid-template-areas: 
-       /*1columna 7 filas*/
-      "encabezado"
-      "manejo"
-      "facebook"
-      "twitter"
-      "instagram"
-      "principal"
-      "pie";
-    grid-template-rows: 20% 10% 45% 45% 45% 10% 15%;
-    grid-template-columns: auto;
-  }
-  .redes {
-    background-color: #000;
-  }
-  .redes__titulo {
-    color: #fff;
-    background-color: #000;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-left: 40px;
-  }
-  .redes__subtitulo {
-    color: #fff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-left: 40px;
-  }
-  .redes__texto {
-    color: #fff;
-    -webkit-text-stroke-color: #31f420;
-    -webkit-text-stroke-width: 0.2px;
-    font-size: 12px;
-    font-weight: 100;
-    font-family: "Roboto", sans-serif;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .redes__texto:hover {
-    color: #31f420;
-  }
-  .redes__enlace {
-    text-decoration: none;
-    list-style: none;
-    color: #fff;
-    background-color: #000;
-    font-family: "Roboto", sans-serif;
-    font-size: 10px;
-    font-weight: 100;
-  }
-  .redes__imagenes {
-    border-radius: 20px;
-    width: 250px;
-    height: 190px;
-    margin-left: 50px;
-    padding-bottom: 10px;
-  }
-  /*Volver al menu ppal TABLET*/
-
-  .menuprincipal {
-    background-color: #000;
-    padding-top: 10px;
-    padding-left: 50px;
-  }
-  .menuprincipal__texto {
-    color: #fff;
-    font-weight: 100;
-    font-size: 10px;
-    font-style: normal;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-  }
-
-  .menuprincipal__logo {
-    width: 40px;
-    height: 30px;
-  }
-  /*Fin volver menu ppal TABLET*/
-}
-/************************************************Desktop*********************************************************/
-@media (min-width: 1024px) {
-  #redes {
-    display: grid;
-    grid-template-areas: 
-       /*1columna 7 filas*/
-      "encabezado"
-      "manejo"
-      "facebook"
-      "twitter"
-      "instagram"
-      "principal"
-      "pie";
-    grid-template-rows: 20% 10% 45% 45% 45% 10% 15%;
-    grid-template-columns: auto;
-  }
-
-  .redes {
-    background-color: #000;
-  }
-  .redes__titulo {
-    color: #fff;
-    background-color: #000;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-top: 20px;
-    padding-left: 40px;
-  }
-  .redes__subtitulo {
-    color: #fff;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    padding-top: 40px;
-    padding-left: 40px;
-  }
-  .redes__texto {
-    color: #fff;
-    -webkit-text-stroke-color: #31f420;
-    -webkit-text-stroke-width: 0.2px;
-    font-size: 16px;
-    font-weight: 100;
-    font-family: "Roboto", sans-serif;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .redes__texto:hover {
-    color: #31f420;
-  }
-  .redes__enlace {
-    text-decoration: none;
-    list-style: none;
-    color: #fff;
-    background-color: #000;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-    padding-left: 10px;
-  }
-  .redes__imagenes {
-    border-radius: 20px;
-    width: 250px;
-    height: 190px;
-    padding-top: 5px;
-    margin-left: 200px;
-  }
+.footer__hover:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
